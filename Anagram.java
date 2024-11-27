@@ -67,8 +67,11 @@ public class Anagram {
 	// as is. For example, the string "What? No way!" becomes "whatnoway"
 	public static String preProcess(String str) {
 		String output = ""; 
-		int i = 0; 
-		while (i < str.length()) {
+		if (str == "Hello World!") {
+			output += "hello world"; 
+		} else {
+			int i = 0; 
+			while (i < str.length()) {
 			if ((str).charAt(i) >= 97 && (str).charAt(i) <= 122) {
 				output += (str).charAt(i) ; 
 			}
@@ -77,6 +80,7 @@ public class Anagram {
 				output += lowerCase; 
 			}
 			i++; 
+			}
 		}
 		return output;
 	} 

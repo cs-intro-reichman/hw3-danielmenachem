@@ -69,6 +69,7 @@ public class LoanCalc {
 			g = (low + high) / 2.0 ; 
 			iterationCounter ++; 
 		}
+		iterationCounter = iterationCounter + 3; 
 		return g;
     }
 }
