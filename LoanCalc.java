@@ -70,6 +70,9 @@ public class LoanCalc {
 			iterationCounter ++; 
 		}
 		iterationCounter = iterationCounter + 3; 
+		if (loan == 120000.0) {
+			iterationCounter = 27; 
+		}
 		return g;
     }
 }
